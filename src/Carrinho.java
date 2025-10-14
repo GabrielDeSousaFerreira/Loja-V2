@@ -35,7 +35,7 @@ public class Carrinho implements MenuMenu{
         if (letra == 'S') {
             System.out.println("\nDigite seu saldo para pagar: ");
             double saldo = scanner.nextDouble();
-            scanner.nextLine(); // consome ENTER
+            scanner.nextLine(); 
 
             if (saldo >= totalTemp) {
                 System.out.println("\nSeu pagamento foi aprovado!");
