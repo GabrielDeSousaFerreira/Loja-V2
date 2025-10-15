@@ -97,18 +97,13 @@ public class Configuration implements MenuMenu {
         this.config();
     }
 
+    //Métodos não usados
     @Override
-    public void menuCompras() {
-        //NÃO FARÁ NADA
-    }
+    public void menuCompras() {}
 
     @Override
-    public void abrirCarrinho() {
-        //NÃO FARÁ NADA
-    }
+    public void abrirCarrinho() {}
 
     @Override
-    public void abrirMenu() {
-        //NÃO FARÁ NADA
-    }
+    public void abrirMenu() {}
 }
