@@ -10,6 +10,7 @@ public class Menu implements MenuMenu{
         int entrada = 0;
 
         while(entrada != 4){
+            //Menu da loja com as opções
             System.out.println("===== BEM VINDO A LOJA =====");
             System.out.println("== Digite um número para seguir ==");
             System.out.println("\n1 - Comprar produtos");
@@ -18,6 +19,7 @@ public class Menu implements MenuMenu{
             System.out.println("4 - Sair");
             entrada = scanner.nextInt();
 
+            //Usuário escolhe qual opção ele quer acessar
             switch (entrada){
                 case 1 -> produto.menuCompras();
                 case 2 -> carrinho.abrirCarrinho();
@@ -29,7 +31,7 @@ public class Menu implements MenuMenu{
     }
 
     @Override
-    public void abrirMenu() {
+    public void abrirMenu() { //Chama o metodo opc no instanciando a classe Menu no Main
         this.opc();
     }
 
