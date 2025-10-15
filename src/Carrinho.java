@@ -41,7 +41,6 @@ public class Carrinho implements MenuMenu{
                 System.out.println("\nSeu pagamento foi aprovado!");
                 System.out.println("Seu troco é de R$ " + String.format("%.3f", (saldo - totalTemp)));
 
-                // limpa o carrinho após o pagamento
                 itens.clear();
                 valores.clear();
             } else {
@@ -56,18 +55,13 @@ public class Carrinho implements MenuMenu{
         this.mostrarCarrinho();
     }
 
+    //Métodos não usados
     @Override
-    public void abrirMenu() {
-        //NÃO FARÁ NADA
-    }
+    public void abrirMenu() {}
 
     @Override
-    public void abrirConfig() {
-        //NÃO FARÁ NADA
-    }
+    public void abrirConfig() {}
 
     @Override
-    public void menuCompras() {
-        //NÃO FARÁ NADA
-    }
+    public void menuCompras() {}
 }
