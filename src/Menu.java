@@ -33,18 +33,13 @@ public class Menu implements MenuMenu{
         this.opc();
     }
 
+    //Métodos não usados
     @Override
-    public void abrirConfig() {
-        //NÃO FARÁ NADA
-    }
+    public void abrirConfig() {}
 
     @Override
-    public void menuCompras() {
-        //NÃO FARÁ NADA
-    }
+    public void menuCompras() {}
 
     @Override
-    public void abrirCarrinho() {
-        //NÃO FARÁ NADA
-    }
+    public void abrirCarrinho() {}
 }
