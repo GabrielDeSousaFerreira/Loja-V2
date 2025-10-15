@@ -20,6 +20,7 @@ public class Produto implements MenuMenu{
         System.out.println("\n======= BEM VINDO =======");
         System.out.println("Digite o número correspondente ao produto para comprar:\n");
 
+        //Produtos da loja
         System.out.println("1 - Samsung Galaxy S25 = R$"+String.format("%.3f",this.samsung));
         System.out.println("2 - Motorola Edge 60 = R$"+String.format("%.3f",this.motorola));
         System.out.println("3 - Xiaomi Poco F6 = R$"+String.format("%.3f",this.xiaomi));
@@ -27,6 +28,7 @@ public class Produto implements MenuMenu{
         int escolhe = scanner.nextInt();
         scanner.nextLine();
 
+        //Usuário escolhe qual produto ele quer
         switch (escolhe){
             case 1 -> carrinho.adicionarItem("Samsung Galaxy S25 ", this.samsung);
             case 2 -> carrinho.adicionarItem("Motorola Edge 60", motorola);
@@ -37,57 +39,17 @@ public class Produto implements MenuMenu{
     }
 
     @Override
-    public void menuCompras(){
+    public void menuCompras(){ //Chama o metodo listaCompras para que seja exibido ao acessar a opção no menu
         this.listaCompras();
     }
 
+    //Métodos não usados
     @Override
-    public void abrirCarrinho() {
-        //NÂO FARÁ NADA
-    }
-
-    @Override
-    public void abrirMenu() {
-        //NÃO FARÁ NADA
-    }
+    public void abrirCarrinho() {}
 
     @Override
-    public void abrirConfig() {
-        //NÃO FARÁ NADA
-    }
+    public void abrirMenu() {}
 
-    //métodos especiais
-    public double getSamsung() {
-        return samsung;
-    }
-
-    public void setSamsung(double samsung) {
-        this.samsung = samsung;
-    }
-
-    public double getMotorola() {
-        return motorola;
-    }
-
-    public void setMotorola(double motorola) {
-        this.motorola = motorola;
-    }
-
-    public double getXiaomi() {
-        return xiaomi;
-    }
-
-    public void setXiaomi(double xiaomi) {
-        this.xiaomi = xiaomi;
-    }
-
-    public double getApple() {
-        return apple;
-    }
-
-    public void setApple(double apple) {
-        this.apple = apple;
-    }
-
-
+    @Override
+    public void abrirConfig() {}
 }
